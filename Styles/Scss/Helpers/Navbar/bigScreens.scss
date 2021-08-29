@@ -1,0 +1,44 @@
+@media screen and (min-width: 800px) {
+	.toggle-menu {
+		display: none;
+	}
+
+
+	.nav-menu .nav-list {
+		display: flex;
+		gap: 2rem;
+
+
+		li a {
+			$animation-speed: .3s;
+
+			padding: .5rem 0;
+			position: relative;
+
+
+			// Linha em baixo do link.
+			&::before {
+				content: '';
+				@include whSize(0, 2px);
+				background-color: $midnight;
+
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+
+				transition: all $animation-speed ease;
+			}
+
+			// Animação da linha quando o mouse estiver em cima.
+			&:hover {
+				&::before {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+
+

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*
+ *  ========== Tipografia ==========
+ */
+@font-face {
+  font-family: Abel;
+  src: url("../../../Public/Fonts/Abel/Abel-Regular.ttf");
+}
+@font-face {
+  font-family: Anton;
+  src: url("../../../Public/Fonts/Anton/Anton-Regular.ttf");
+}
+@font-face {
+  font-family: Josefin;
+  src: url("../../../Public/Fonts/Josefin_Sans/JosefinSans-Bold.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-Thin.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-Light.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-Regular.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-SemiBold.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-BoldItalic.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-ThinItalic.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-LightItalic.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-SemiBoldItalic.ttf");
+}
+@font-face {
+  font-family: Lexend;
+  src: url("../../../Public/Fonts/Lexend_Deca/LexendDeca-Regular.ttf");
+}
+@font-face {
+  font-family: Livvic;
+  src: url("../../../Public/Fonts/Livvic/Livvic-Bold.ttf"), url("../../../Public/Fonts/Livvic/Livvic-Thin.ttf"), url("../../../Public/Fonts/Livvic/Livvic-Black.ttf"), url("../../../Public/Fonts/Livvic/Livvic-Light.ttf"), url("../../../Public/Fonts/Livvic/Livvic-Medium.ttf"), url("../../../Public/Fonts/Livvic/Livvic-Regular.ttf"), url("../../../Public/Fonts/Livvic/Livvic-SemiBold.ttf"), url("../../../Public/Fonts/Livvic/Livvic-BoldItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-ExtraLight.ttf"), url("../../../Public/Fonts/Livvic/Livvic-ThinItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-BlackItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-LightItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-MediumItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-RegularItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-SemiBoldItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-ExtraLightItalic.ttf");
+}
+@keyframes downing {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+/*
+ *  ========== Configuração da página ==========
+ */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  background: white;
+  color: black;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/*
+ *  ========== Elementos da página ==========
+ */
+input, button, label, textarea, a {
+  cursor: pointer;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidde {
+  display: none;
+}
+
+/*# sourceMappingURL=Globals.css.map */

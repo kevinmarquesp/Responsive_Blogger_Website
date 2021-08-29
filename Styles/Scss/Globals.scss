@@ -1,0 +1,52 @@
+@import 'Helpers/consts';
+@import 'Helpers/imports';
+@import 'Helpers/keyframes';
+
+
+
+/*
+ *  ========== Configuração da página ==========
+ */
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+:root {
+	background: white;
+	color: black;
+	
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+html, body {
+	overflow-x: hidden;
+}
+
+
+
+
+
+/*
+ *  ========== Elementos da página ==========
+ */
+
+input, button, label, textarea, a {
+	cursor: pointer;
+	outline: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.hidde {
+	display: none;
+}
+
+

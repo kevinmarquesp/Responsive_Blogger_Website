@@ -1,0 +1,125 @@
+@media screen and (max-width: 800px) {
+	.toggle-menu {
+		display: block;
+		position: relative;
+		z-index: 2;
+		
+		@include whSize(35px, 35px);
+
+		animation: downing .5s ease-in-out .1s backwards;
+		
+		
+		&:hover {
+			span {
+				background-color: $text-gray;
+			}
+		}
+		
+		span {
+			background-color: $text-light;
+			position: absolute;
+			left: 0;
+			
+			height: 3px;
+			
+			transition: all .3s ease-in-out;
+		}
+		
+		span.menu-bars_top {
+			width: 100%;
+			top: 20%;
+		}
+		
+		span.menu-bars_middle {
+			width: 70%;
+			top: 50%;
+			
+			transform: translateY(-50%);
+		}
+		
+		span.menu-bars_bottom {
+			width: 50%;
+			bottom: 20%;
+		}
+	}
+	
+	// Botão quando for ativado.
+	.toggle-menu.active {
+		span.menu-bars_top {
+			top: 50%;
+			transform: translateY(-50%) rotate(45deg);
+		}
+		
+		span.menu-bars_middle {
+			transform: translateX(100%);
+			opacity: 0;
+		}
+		
+		span.menu-bars_bottom {
+			width: 100%;
+			
+			bottom: 50%;
+			transform: translateY(50%) rotate(-45deg);
+		}
+	}
+	
+	// Exibindo a lista com os links.
+	nav.active {
+		position: fixed;
+		height: 100%;
+	}
+	
+	.nav-menu, .social {
+		display: none;
+	}
+	
+	.nav-menu.active {
+		display: block;
+		position: fixed;
+		text-align: center;
+		
+		left: 0;
+		top: 5rem;
+		
+		width: 100vw;
+		
+		li {
+			@include whSize(100%, 5rem);
+			
+			display: flex;
+			align-items: center;
+			
+			a {
+				line-height: 5rem;
+				font-size: 1.3rem;
+				width: 100vw;
+				
+				&:hover {
+					background-color: $midnight;
+					color: $white;
+				}
+			}
+		}
+	}
+	
+	.social.active {
+		display: block;
+		
+		position: fixed;
+		padding: 0 3rem;
+		
+		left: 0;
+		bottom: 3rem;
+		
+		font-size: 2rem;
+		width: 100%;
+		
+		
+		ul {
+			width: 100%;
+			justify-content: space-around;
+		}
+	}
+}
+
+

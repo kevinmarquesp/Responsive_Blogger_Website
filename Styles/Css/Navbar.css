@@ -1,0 +1,215 @@
+/*
+ *  ========== Tipografia ==========
+ */
+@font-face {
+  font-family: Abel;
+  src: url("../../../Public/Fonts/Abel/Abel-Regular.ttf");
+}
+@font-face {
+  font-family: Anton;
+  src: url("../../../Public/Fonts/Anton/Anton-Regular.ttf");
+}
+@font-face {
+  font-family: Josefin;
+  src: url("../../../Public/Fonts/Josefin_Sans/JosefinSans-Bold.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-Thin.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-Light.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-Regular.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-SemiBold.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-BoldItalic.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-ThinItalic.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-LightItalic.ttf"), url("../../../Public/Fonts/Josefin_Sans/JosefinSans-SemiBoldItalic.ttf");
+}
+@font-face {
+  font-family: Lexend;
+  src: url("../../../Public/Fonts/Lexend_Deca/LexendDeca-Regular.ttf");
+}
+@font-face {
+  font-family: Livvic;
+  src: url("../../../Public/Fonts/Livvic/Livvic-Bold.ttf"), url("../../../Public/Fonts/Livvic/Livvic-Thin.ttf"), url("../../../Public/Fonts/Livvic/Livvic-Black.ttf"), url("../../../Public/Fonts/Livvic/Livvic-Light.ttf"), url("../../../Public/Fonts/Livvic/Livvic-Medium.ttf"), url("../../../Public/Fonts/Livvic/Livvic-Regular.ttf"), url("../../../Public/Fonts/Livvic/Livvic-SemiBold.ttf"), url("../../../Public/Fonts/Livvic/Livvic-BoldItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-ExtraLight.ttf"), url("../../../Public/Fonts/Livvic/Livvic-ThinItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-BlackItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-LightItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-MediumItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-RegularItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-SemiBoldItalic.ttf"), url("../../../Public/Fonts/Livvic/Livvic-ExtraLightItalic.ttf");
+}
+@media screen and (max-width: 800px) {
+  .toggle-menu {
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: 35px;
+    height: 35px;
+    animation: downing 0.5s ease-in-out 0.1s backwards;
+  }
+  .toggle-menu:hover span {
+    background-color: #3f4954;
+  }
+  .toggle-menu span {
+    background-color: #686666da;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  .toggle-menu span.menu-bars_top {
+    width: 100%;
+    top: 20%;
+  }
+  .toggle-menu span.menu-bars_middle {
+    width: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .toggle-menu span.menu-bars_bottom {
+    width: 50%;
+    bottom: 20%;
+  }
+
+  .toggle-menu.active span.menu-bars_top {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .toggle-menu.active span.menu-bars_middle {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  .toggle-menu.active span.menu-bars_bottom {
+    width: 100%;
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
+
+  nav.active {
+    position: fixed;
+    height: 100%;
+  }
+
+  .nav-menu, .social {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: block;
+    position: fixed;
+    text-align: center;
+    left: 0;
+    top: 5rem;
+    width: 100vw;
+  }
+  .nav-menu.active li {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+  }
+  .nav-menu.active li a {
+    line-height: 5rem;
+    font-size: 1.3rem;
+    width: 100vw;
+  }
+  .nav-menu.active li a:hover {
+    background-color: #104f55;
+    color: #fff;
+  }
+
+  .social.active {
+    display: block;
+    position: fixed;
+    padding: 0 3rem;
+    left: 0;
+    bottom: 3rem;
+    font-size: 2rem;
+    width: 100%;
+  }
+  .social.active ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 800px) {
+  .toggle-menu {
+    display: none;
+  }
+
+  .nav-menu .nav-list {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-menu .nav-list li a {
+    padding: 0.5rem 0;
+    position: relative;
+  }
+  .nav-menu .nav-list li a::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #104f55;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+  }
+  .nav-menu .nav-list li a:hover::before {
+    width: 100%;
+  }
+}
+nav {
+  width: 100vw;
+  height: 5rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  transition: height 0.5s ease-in-out;
+}
+nav .nav-bar {
+  width: 100%;
+  height: 5rem;
+  max-width: 1080px;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-bar a {
+  color: #686666da;
+  transition: all 0.3s ease;
+}
+nav .nav-bar a:hover {
+  color: #3f4954;
+}
+
+.nav-brand {
+  animation: downing 0.5s ease-in-out;
+}
+.nav-brand a {
+  font-family: Lexend;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav-menu .nav-link {
+  font-family: Abel;
+  font-weight: bold;
+}
+
+.social {
+  animation: downing 0.5s ease-in-out 1.5s backwards;
+}
+.social ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list li:nth-child(1) {
+  animation: downing 0.8s ease-in-out calc(1 * .2s) backwards;
+}
+
+.nav-list li:nth-child(2) {
+  animation: downing 0.8s ease-in-out calc(2 * .2s) backwards;
+}
+
+.nav-list li:nth-child(3) {
+  animation: downing 0.8s ease-in-out calc(3 * .2s) backwards;
+}
+
+.nav-list li:nth-child(4) {
+  animation: downing 0.8s ease-in-out calc(4 * .2s) backwards;
+}
+
+.nav-list li:nth-child(5) {
+  animation: downing 0.8s ease-in-out calc(5 * .2s) backwards;
+}
+
+/*# sourceMappingURL=Navbar.css.map */

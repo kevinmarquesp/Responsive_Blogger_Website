@@ -1,2 +1,3 @@
-# Responsive_Blogger_Website
-Uma página web de um site simples, apenas para aprender a usar o HTML, SCSS e JavaScript juntos em um único projeto.
+# Página inicial de um Blog
+
+Este projeto foi feito com o único objetivo de estudar desenvolvimento front-end e melhorar minhas skills em organizar o projeto e torná-lo legível para outros desenvolvedores.

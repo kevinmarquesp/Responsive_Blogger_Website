@@ -1,0 +1,79 @@
+@import 'Helpers/consts';
+@import 'Helpers/imports';
+@import 'Helpers/Navbar/smallScreens.scss';
+@import 'Helpers/Navbar/bigScreens.scss';
+
+
+
+nav {
+	@include whSize(100vw, 5rem);
+	position: absolute;
+	
+	display: flex;
+	justify-content: center;
+	
+	box-shadow: 0 7px 10px rgba(0, 0, 0, .3);
+	background-color: $white;
+	
+	transition: height .5s ease-in-out;
+	
+	
+	.nav-bar {
+		@include whSize(100%, 5rem);
+		max-width: 1080px;
+		
+		padding: 0 2rem;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+		
+		a {
+			color: $text-light;
+			transition: all .3s ease;
+			
+			
+			&:hover {
+				color: $text-gray;
+			}
+		}
+	}
+}
+
+.nav-brand {
+	animation: downing .5s ease-in-out;
+	
+	
+	a {
+		font-family: Lexend;
+		font-size: 1.6rem;
+		font-weight: bold;
+	}
+}
+
+.nav-menu .nav-link {
+	font-family: Abel;
+	font-weight: bold;
+}
+
+.social {
+	animation: downing .5s ease-in-out 1.5s backwards;
+	
+	
+	ul {
+		display: flex;
+		gap: 1rem;
+	}
+}
+
+
+// --- Animação dos itens
+$nav-items: 1, 2, 3, 4, 5;
+@each $item in $nav-items {
+	.nav-list li:nth-child(#{$item}) {
+		animation: downing .8s ease-in-out calc(#{$item} * .2s) backwards;
+	}
+}
+
+
