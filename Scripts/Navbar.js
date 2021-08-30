@@ -12,8 +12,19 @@ const NavBar = {
 
 
 function toggleNavbar() {
-	NavBar.nav.classList.toggle('active');
-	NavBar.button.classList.toggle('active');
-	NavBar.menu.classList.toggle('active');
-	NavBar.social.classList.toggle('active');
+
+	// Transforma o objeto em um array com arrays.
+	Object.entries(NavBar).forEach((element) => {
+
+		// Cada um desses array tem dois valores.
+		const [key, value] = element;
+
+		if( key !== 'input' ) {
+			value.classList.toggle('active');
+		}
+
+	});
+
 }
+
+
