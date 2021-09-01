@@ -12,19 +12,13 @@ const NavBar = {
 
 
 function toggleNavbar() {
-
-	// Transforma o objeto em um array com arrays.
-	Object.entries(NavBar).forEach((element) => {
-
-		// Cada um desses array tem dois valores.
-		const [key, value] = element;
+	Object.entries(NavBar).forEach((element) => { // Transforma o objeto em um array com arrays.
+		const [key, value] = element;	// Cada um desses array tem dois valores.
 
 		if( key !== 'input' ) {
 			value.classList.toggle('active');
 		}
-
 	});
-
 }
 
 

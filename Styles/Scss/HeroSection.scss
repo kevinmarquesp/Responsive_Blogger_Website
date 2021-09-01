@@ -1,0 +1,79 @@
+@import 'Helpers/consts';
+@import 'Helpers/keyframes';
+
+
+
+section.hero {
+	@include whSize(100vw, 105vh);
+	max-height: 200ch;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url('../../Public/Images/Hero-background.png');
+}
+
+section.hero .container {
+	@include whSize(100%, 100%);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	div {
+		$transition-speed: .5s;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		
+
+		span, h1 {
+			color: $white;
+
+			text-align: center;
+			padding: 0 2rem;
+		}
+		
+		span {
+			font-size: 1.3rem;
+			animation: uping $transition-speed backwards .5s;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+			font-family: Lexend;
+			animation: uping $transition-speed backwards 1s;
+		}
+
+		button {
+			color: black;
+			background-image: $sky;
+
+			padding: 1rem 3rem;
+			border: solid 2px transparent;
+			border-radius: 2rem;
+
+			font-family: Livvic;
+			letter-spacing: 2px;
+
+			transition: all $transition-speed ease;
+			animation: uping $transition-speed backwards 1.5s;
+
+
+			&:hover {
+				background: transparent;
+				border-color: $white;
+				color: $white;
+			}
+		}
+	}
+}
+
+

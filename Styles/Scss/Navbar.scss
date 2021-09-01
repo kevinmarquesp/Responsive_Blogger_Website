@@ -1,5 +1,5 @@
 @import 'Helpers/consts';
-@import 'Helpers/imports';
+@import 'Helpers/keyframes';
 @import 'Helpers/Navbar/_smallScreens';
 @import 'Helpers/Navbar/_bigScreens';
 
@@ -20,7 +20,6 @@ nav {
 	
 	.nav-bar {
 		@include whSize(100%, 5rem);
-		max-width: 1080px;
 		
 		padding: 0 2rem;
 
@@ -48,7 +47,6 @@ nav {
 	a {
 		font-family: Lexend;
 		font-size: 1.6rem;
-		font-weight: bold;
 	}
 }
 

@@ -1,25 +1,14 @@
-/*
- *  ========== Tipografia ==========
- */
-@font-face {
-  font-family: Abel;
-  src: url("../../Public/Fonts/Abel/Abel-Regular.ttf");
+@keyframes downing {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
 }
-@font-face {
-  font-family: Anton;
-  src: url("../../Public/Fonts/Anton/Anton-Regular.ttf");
-}
-@font-face {
-  font-family: Josefin;
-  src: url("../../Public/Fonts/Josefin_Sans/JosefinSans-Bold.ttf"), url("../../Public/Fonts/Josefin_Sans/JosefinSans-Thin.ttf"), url("../../Public/Fonts/Josefin_Sans/JosefinSans-Light.ttf"), url("../../Public/Fonts/Josefin_Sans/JosefinSans-Regular.ttf"), url("../../Public/Fonts/Josefin_Sans/JosefinSans-SemiBold.ttf"), url("../../Public/Fonts/Josefin_Sans/JosefinSans-BoldItalic.ttf"), url("../../Public/Fonts/Josefin_Sans/JosefinSans-ThinItalic.ttf"), url("../../Public/Fonts/Josefin_Sans/JosefinSans-LightItalic.ttf"), url("../../Public/Fonts/Josefin_Sans/JosefinSans-SemiBoldItalic.ttf");
-}
-@font-face {
-  font-family: Lexend;
-  src: url("../../Public/Fonts/Lexend_Deca/LexendDeca-Regular.ttf");
-}
-@font-face {
-  font-family: Livvic;
-  src: url("../../Public/Fonts/Livvic/Livvic-Bold.ttf"), url("../../Public/Fonts/Livvic/Livvic-Thin.ttf"), url("../../Public/Fonts/Livvic/Livvic-Black.ttf"), url("../../Public/Fonts/Livvic/Livvic-Light.ttf"), url("../../Public/Fonts/Livvic/Livvic-Medium.ttf"), url("../../Public/Fonts/Livvic/Livvic-Regular.ttf"), url("../../Public/Fonts/Livvic/Livvic-SemiBold.ttf"), url("../../Public/Fonts/Livvic/Livvic-BoldItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-ExtraLight.ttf"), url("../../Public/Fonts/Livvic/Livvic-ThinItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-BlackItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-LightItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-MediumItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-RegularItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-SemiBoldItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-ExtraLightItalic.ttf");
+@keyframes uping {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
 }
 @media screen and (max-width: 800px) {
   .toggle-menu {
@@ -156,7 +145,6 @@ nav {
 nav .nav-bar {
   width: 100%;
   height: 5rem;
-  max-width: 1080px;
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
@@ -176,7 +164,6 @@ nav .nav-bar a:hover {
 .nav-brand a {
   font-family: Lexend;
   font-size: 1.6rem;
-  font-weight: bold;
 }
 
 .nav-menu .nav-link {

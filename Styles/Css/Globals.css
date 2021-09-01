@@ -28,6 +28,12 @@
     opacity: 0;
   }
 }
+@keyframes uping {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
 /*
  *  ========== Configuração da página ==========
  */
@@ -41,7 +47,7 @@
 :root {
   background: white;
   color: black;
-  font-family: sans-serif;
+  font-family: Abel, sans-serif;
   font-size: 16px;
 }
 
@@ -63,6 +69,10 @@ ul {
 
 .hidde {
   display: none;
+}
+
+.container {
+  max-width: 1080px;
 }
 
 /*# sourceMappingURL=Globals.css.map */
