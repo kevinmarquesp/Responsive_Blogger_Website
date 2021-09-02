@@ -51,12 +51,9 @@ section.hero .container div h1 {
   animation: uping 0.5s backwards 1s;
 }
 section.hero .container div button {
-  color: black;
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   padding: 1rem 3rem;
   border: solid 2px transparent;
-  border-radius: 2rem;
-  font-family: Livvic;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   letter-spacing: 2px;
   transition: all 0.5s ease;
   animation: uping 0.5s backwards 1.5s;

@@ -1,0 +1,19 @@
+@keyframes downing {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+@keyframes uping {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=Main.css.map */

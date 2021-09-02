@@ -53,14 +53,10 @@ section.hero .container {
 		}
 
 		button {
-			color: black;
-			background-image: $sky;
-
 			padding: 1rem 3rem;
 			border: solid 2px transparent;
-			border-radius: 2rem;
 
-			font-family: Livvic;
+			background-image: $sky;
 			letter-spacing: 2px;
 
 			transition: all $transition-speed ease;

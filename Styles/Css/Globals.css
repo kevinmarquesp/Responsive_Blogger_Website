@@ -75,4 +75,11 @@ ul {
   max-width: 1080px;
 }
 
+.btn {
+  border: none;
+  border-radius: 2rem;
+  font-family: Livvic;
+  color: black;
+}
+
 /*# sourceMappingURL=Globals.css.map */

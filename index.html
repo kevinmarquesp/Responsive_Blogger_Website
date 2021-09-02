@@ -8,16 +8,28 @@
       Blogger Site
     </title>
 
+    <!-- Estilos em Css da página -->
     <link rel="stylesheet" href="Styles/Css/Globals.css" media="all">
     <link rel="stylesheet" href="Styles/Css/Navbar.css" media="all">
     <link rel="stylesheet" href="Styles/Css/HeroSection.css" media="all">
+    <link rel="stylesheet" href="Styles/Css/Main.css" media="all">
+    <link rel="stylesheet" href="Styles/Css/MainCarousel.css" media="all">
 
+    <!-- Estilos para a biblioteca OwlCarousel -->
+    <link rel="stylesheet" href="Scripts/Librarys/OwlCarousel/Styles/owl.carousel.min.css" media="all">
+    <link rel="stylesheet" href="Scripts/Librarys/OwlCarousel/Styles/owl.theme.default.min.css" media="all">
+
+    <!-- Ícones do FontAwesome -->
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
       integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Bibliotecas em JavaScript -->
+    <script src="Scripts/Librarys/jquery-3.6.0.min.js"></script>
+    <script src="Scripts/Librarys/OwlCarousel/owl.carousel.min.js"></script>
 
   </head>
   <body>
@@ -110,7 +122,7 @@
           <h1>
             Amazing Place on Earth
           </h1>
-          <button>
+          <button class="btn">
             Explore
           </button>
         </div>
@@ -119,9 +131,29 @@
 
 
 
-    <!-- Hello world! -->
+    <main>
+      <!-- ========== Carrosel com imagens ========== -->
+      <section class="container carousel">
+        <div class="owl-carousel owl-theme blog-carousel">
+          <article>
+            <img src="Public/Images/Posts/post-1.jpg" alt="Imagem da postagem do Carrosel">
+            <h2>
+              London Fashion week's continued the evolution
+            </h2>
+            <button class="btn">
+              Fashion
+            </button>
+            <span>
+              2 minuts
+            </span>
+          </article>
+
+        </div>
+      </section>
+    </main>
 
     	
       <script src="Scripts/Navbar.js"></script>
+      <script src="Scripts/BlogCarousel.js"></script>
   </body>
 </html>
