@@ -8,11 +8,12 @@
 nav {
 	@include whSize(100vw, 5rem);
 	position: absolute;
+	z-index: 2;
 	
 	display: flex;
 	justify-content: center;
 	
-	box-shadow: 0 7px 10px rgba(0, 0, 0, .3);
+	box-shadow: 0 7px 10px rgba(0 0 0 / .3);
 	background-color: $white;
 	
 	transition: height .5s ease-in-out;
@@ -69,7 +70,7 @@ nav {
 // --- Animação dos itens
 $nav-items: 1, 2, 3, 4, 5;
 @each $item in $nav-items {
-	.nav-list li:nth-child(#{$item}) {
+	.nav-list li:nth-child( #{$item} ) {
 		animation: downing .8s ease-in-out calc(#{$item} * .2s) backwards;
 	}
 }
