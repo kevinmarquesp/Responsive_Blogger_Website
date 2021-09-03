@@ -28,12 +28,14 @@ section.carousel .blog-carousel article {
   gap: 1rem;
   border-radius: 1rem;
   padding-bottom: 2rem;
-  margin: 2rem;
+  margin: 2rem auto;
   min-width: 30ch;
+  max-width: 30ch;
 }
 section.carousel .blog-carousel article img {
   border-radius: 0.9rem 0.9rem 0 0;
-  height: 23ch;
+  object-fit: cover;
+  height: 20ch;
 }
 section.carousel .blog-carousel article h2 {
   text-align: center;
