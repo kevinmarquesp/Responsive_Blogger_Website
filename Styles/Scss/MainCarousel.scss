@@ -3,15 +3,20 @@
 
 
 
+/*
+ *  ========== Estilo da sessão inteira ==========
+ */
 section.carousel {
 	width: 100vw;
 	transform: translateY(-30%);
+	animation: uping .5s ease-in-out 1.5s backwards;
 
 
 	.blog-carousel {
+		// Estilo de cada cartão
 		article {
 			background-color: $white;
-			box-shadow: 10px 5px 1rem rgba(0, 0, 0, .7);
+			box-shadow: 10px 5px 1rem rgba(0 0 0 / .7);
 
 			display: flex;
 			flex-direction: column;
@@ -19,12 +24,15 @@ section.carousel {
 			gap: 1rem;
 
 			border-radius: 1rem;
-			margin: 2rem;
 			padding-bottom: 2rem;
+			margin: 2rem;
+
+			min-width: 30ch;
 
 
 			img {
-				border-radius: 1rem 1rem 0 0;
+				border-radius: .9rem .9rem 0 0;
+				height: 23ch;
 			}
 
 			h2 {
@@ -46,3 +54,5 @@ section.carousel {
 		}
 	}
 }
+
+

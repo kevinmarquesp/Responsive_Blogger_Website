@@ -3,7 +3,7 @@
 
 
 
-section.hero {
+header {
 	@include whSize(100vw, 105vh);
 	max-height: 200ch;
 
@@ -18,7 +18,7 @@ section.hero {
 	background-image: url('../../Public/Images/Hero-background.png');
 }
 
-section.hero .container {
+header .container {
 	@include whSize(100%, 100%);
 
 	display: flex;
