@@ -6,8 +6,11 @@
 /*
  *  ========== Estilo da sessão inteira ==========
  */
-section.carousel {
+.carousel {
 	width: 100vw;
+
+	display: flex;
+	justify-content: center;
 
 	transform: translateY(-30%);
 	animation: uping .5s ease-in-out 1.5s backwards;

@@ -14,12 +14,14 @@
 /*
  *  ========== Estilo da sessão inteira ==========
  */
-section.carousel {
+.carousel {
   width: 100vw;
+  display: flex;
+  justify-content: center;
   transform: translateY(-30%);
   animation: uping 0.5s ease-in-out 1.5s backwards;
 }
-section.carousel .blog-carousel article {
+.carousel .blog-carousel article {
   background-color: #fff;
   box-shadow: 10px 5px 1rem rgba(0, 0, 0, 0.7);
   display: flex;
@@ -32,22 +34,22 @@ section.carousel .blog-carousel article {
   min-width: 30ch;
   max-width: 30ch;
 }
-section.carousel .blog-carousel article img {
+.carousel .blog-carousel article img {
   border-radius: 0.9rem 0.9rem 0 0;
   object-fit: cover;
   height: 20ch;
 }
-section.carousel .blog-carousel article h2 {
+.carousel .blog-carousel article h2 {
   text-align: center;
   padding: 0 2rem;
 }
-section.carousel .blog-carousel article button {
+.carousel .blog-carousel article button {
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   padding: 1rem 2rem;
   filter: opacity(0.8);
   transition: all 0.3s ease-in-out;
 }
-section.carousel .blog-carousel article button:hover {
+.carousel .blog-carousel article button:hover {
   filter: opacity(1);
 }
 
