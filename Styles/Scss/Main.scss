@@ -121,3 +121,43 @@ article .post-desc { display: flex;
 		}
 	}
 }
+
+
+/*
+ *  ========== Estilo dos links das páginas ==========
+ */
+
+.navigate {
+	display: flex;
+	grid-gap: 2rem;
+
+	justify-content: center;
+	align-items: center;
+
+	a.blog-nav-button {
+		color: $text-gray;
+	}
+
+	
+	ul {
+		display: flex;
+		grid-gap: .5rem;
+
+
+		li {
+			@include whSize(2rem, 2rem);
+			background-color: $text-gray;
+			border-radius: 2rem;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+
+			a {
+				font-family: Lexend;
+				color: $white;
+			}
+		}
+	}
+}

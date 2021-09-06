@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes downing {
   from {
     transform: translateY(-100%);
@@ -96,6 +97,36 @@ article .post-desc button {
 }
 article .post-desc button span {
   white-space: nowrap;
+}
+
+/*
+ *  ========== Estilo dos links das páginas ==========
+ */
+.navigate {
+  display: flex;
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.navigate a.blog-nav-button {
+  color: #3f4954;
+}
+.navigate ul {
+  display: flex;
+  grid-gap: 0.5rem;
+}
+.navigate ul li {
+  width: 2rem;
+  height: 2rem;
+  background-color: #3f4954;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigate ul li a {
+  font-family: Lexend;
+  color: #fff;
 }
 
 /*# sourceMappingURL=Main.css.map */
