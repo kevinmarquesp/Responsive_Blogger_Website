@@ -20,6 +20,7 @@ main .container {
   display: inline-grid;
   grid-template-columns: 65% 35%;
   grid-gap: 2rem;
+  padding: 2rem;
 }
 
 /*
@@ -27,8 +28,9 @@ main .container {
  */
 section.blog-posts article {
   width: 100%;
-  padding-bottom: 2rem;
   border-bottom: solid 3px #104f55;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 article .post-image {

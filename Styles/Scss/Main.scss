@@ -16,6 +16,8 @@ main {
 		display: inline-grid;
 		grid-template-columns: 65% 35%;
 		grid-gap: 2rem;
+
+		padding: 2rem;
 	}
 }
 
@@ -27,9 +29,10 @@ main {
 
 section.blog-posts article {
 	width: 100%;
+	border-bottom: solid 3px $midnight;
 
 	padding-bottom: 2rem;
-	border-bottom: solid 3px $midnight;
+	margin-bottom: 2rem;
 }
 
 article .post-image {
