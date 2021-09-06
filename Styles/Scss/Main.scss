@@ -10,4 +10,11 @@ main {
 	justify-content: center;
 
 	scrollbar-width: none;
+
+
+	.container {
+		display: inline-grid;
+		grid-template-columns: 65% 35%;
+		grid-gap: 2rem;
+	}
 }
