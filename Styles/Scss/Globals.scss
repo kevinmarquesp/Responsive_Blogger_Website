@@ -65,3 +65,13 @@ ul {
 	font-family: Livvic;
 	color: black;
 }
+
+.transparent {
+	filter: opacity(.8);
+	transition: all .3s ease-in-out;
+
+
+	&:hover {
+		filter: opacity(1);
+	}
+}

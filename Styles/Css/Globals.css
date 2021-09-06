@@ -87,4 +87,12 @@ ul {
   color: black;
 }
 
+.transparent {
+  filter: opacity(0.8);
+  transition: all 0.3s ease-in-out;
+}
+.transparent:hover {
+  filter: opacity(1);
+}
+
 /*# sourceMappingURL=Globals.css.map */

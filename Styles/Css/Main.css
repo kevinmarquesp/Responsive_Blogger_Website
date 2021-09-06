@@ -22,4 +22,78 @@ main .container {
   grid-gap: 2rem;
 }
 
+/*
+ *  ========== Estilo dos posts ==========
+ */
+section.blog-posts article {
+  width: 100%;
+  padding-bottom: 2rem;
+  border-bottom: solid 3px #104f55;
+}
+
+article .post-image {
+  position: relative;
+  margin-bottom: 3rem;
+}
+article .post-image .image {
+  width: 100%;
+  height: 45ch;
+  overflow: hidden;
+}
+article .post-image .image img {
+  transition: all 0.5s ease-in-out;
+}
+article .post-image .image img:hover {
+  transform: scale(1.3);
+}
+article .post-image .post-info {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  position: absolute;
+  width: auto;
+  color: #3f4954;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: flex;
+  grid-gap: 1.5rem;
+}
+article .post-image .post-info span {
+  white-space: nowrap;
+}
+article .post-image .post-info span svg {
+  margin-right: 0.3rem;
+}
+
+article .post-desc {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1.5rem;
+}
+article .post-desc h3 {
+  color: #3f4954;
+  font-family: Anton;
+  letter-spacing: 0.1rem;
+  font-weight: 100;
+}
+article .post-desc p {
+  color: #686666da;
+  font-family: Lexend;
+  max-width: 80ch;
+}
+article .post-desc button {
+  font-family: Livvic;
+  width: min-content;
+  display: flex;
+  align-items: center;
+  grid-gap: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+article .post-desc button span {
+  white-space: nowrap;
+}
+
 /*# sourceMappingURL=Main.css.map */
