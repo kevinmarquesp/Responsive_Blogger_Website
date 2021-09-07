@@ -20,7 +20,7 @@
 }
 @font-face {
   font-family: Livvic;
-  src: url("../../Public/Fonts/Livvic/Livvic-Bold.ttf"), url("../../Public/Fonts/Livvic/Livvic-Thin.ttf"), url("../../Public/Fonts/Livvic/Livvic-Black.ttf"), url("../../Public/Fonts/Livvic/Livvic-Light.ttf"), url("../../Public/Fonts/Livvic/Livvic-Medium.ttf"), url("../../Public/Fonts/Livvic/Livvic-Regular.ttf"), url("../../Public/Fonts/Livvic/Livvic-SemiBold.ttf"), url("../../Public/Fonts/Livvic/Livvic-BoldItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-ExtraLight.ttf"), url("../../Public/Fonts/Livvic/Livvic-ThinItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-BlackItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-LightItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-MediumItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-RegularItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-SemiBoldItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-ExtraLightItalic.ttf");
+  src: url("../../Public/Fonts/Livvic/Livvic-Regular.ttf"), url("../../Public/Fonts/Livvic/Livvic-Bold.ttf"), url("../../Public/Fonts/Livvic/Livvic-Thin.ttf"), url("../../Public/Fonts/Livvic/Livvic-Black.ttf"), url("../../Public/Fonts/Livvic/Livvic-Light.ttf"), url("../../Public/Fonts/Livvic/Livvic-Medium.ttf"), url("../../Public/Fonts/Livvic/Livvic-SemiBold.ttf"), url("../../Public/Fonts/Livvic/Livvic-BoldItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-ExtraLight.ttf"), url("../../Public/Fonts/Livvic/Livvic-ThinItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-BlackItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-LightItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-MediumItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-RegularItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-SemiBoldItalic.ttf"), url("../../Public/Fonts/Livvic/Livvic-ExtraLightItalic.ttf");
 }
 @keyframes downing {
   from {
@@ -77,6 +77,7 @@ ul {
 
 .container {
   max-width: 1080px;
+  width: 100vw;
 }
 
 .btn {
@@ -84,6 +85,14 @@ ul {
   border-radius: 2rem;
   font-family: Livvic;
   color: black;
+}
+
+.transparent {
+  filter: opacity(0.8);
+  transition: all 0.3s ease-in-out;
+}
+.transparent:hover {
+  filter: opacity(1);
 }
 
 /*# sourceMappingURL=Globals.css.map */

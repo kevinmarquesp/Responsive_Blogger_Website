@@ -1,0 +1,126 @@
+@import 'Helpers/consts';
+@import 'Helpers/keyframes';
+
+
+aside section {
+	margin-top: 3rem;
+}
+
+aside h4 {
+	font-family: Lexend;
+	font-size: 1.5rem;
+
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+
+/*
+ *  ========== Estilo das categorias ==========
+ */
+
+ul.category-list {
+	width: 100%;
+	padding: 0 2rem;
+	
+	display: flex;
+	flex-direction: column;
+	grid-gap: 1rem;
+}
+
+li.category-item {
+	background-image: $sky;
+	height: 2rem;
+	border-radius: 2rem;
+
+	display: flex;
+	align-items: center;
+
+
+	a.category-link {
+		width: 100%;
+		line-height: 100%;
+		margin: 0 1rem;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		font-family: Livvic;
+		font-weight: 100;
+		color: black;
+	}
+}
+
+
+/*
+ *  ========== Estilo dos posts populares ==========
+ */
+
+aside article {
+	margin-bottom: 2rem;
+
+
+	.post-image {
+		margin-bottom: 1rem;
+
+
+		.image {
+			height: 23ch;
+		}
+
+		.post-info {
+			background: $white;
+			border-radius: 0;
+
+			padding: .3rem 1rem;
+			left: 0;
+			transform: translate(0, 0);
+		}
+	}
+
+	.post-desc h5 {
+		font-family: Anton;
+		color: $text-gray;
+
+		font-size: 1rem;
+		letter-spacing: .1rem;
+	}
+}
+
+/*
+ *  ========== Newsletter ==========
+ */
+
+form.sidebar input {
+	@include whSize(100%, 3rem);
+
+	display: block;
+	margin: .5rem;
+}
+
+#sidebar_email {
+	border: solid 1px $text-gray;
+	padding: 0 2rem;
+}
+
+#sidebar_submit {
+	border-radius: 0;
+	background-image: $sky;
+}
+
+
+/*
+ *  ========== Tags populares ==========
+ */
+
+aside p {
+	word-spacing: 1rem;
+	
+
+	span {
+		background-image: $sky;
+		padding: .5rem 1rem;
+		line-height: 3rem;
+	}
+}

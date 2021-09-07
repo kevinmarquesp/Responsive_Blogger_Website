@@ -1,6 +1,9 @@
 @import 'Helpers/consts';
 @import 'Helpers/keyframes';
 
+@import 'Helpers/Main/smallScreen';
+@import 'Helpers/Main/bigScreens';
+
 
 
 main {
@@ -10,4 +13,155 @@ main {
 	justify-content: center;
 
 	scrollbar-width: none;
+
+
+	.container {
+		display: inline-grid;
+		grid-template-columns: 65% 35%;
+		grid-gap: 2rem;
+
+		padding: 2rem;
+	}
+}
+
+
+
+/*
+ *  ========== Estilo dos posts ==========
+ */
+
+section.blog-posts article {
+	width: 100%;
+	border-bottom: solid 3px $midnight;
+
+	padding-bottom: 2rem;
+	margin-bottom: 2rem;
+}
+
+article .post-image {
+	position: relative;
+	margin-bottom: 3rem;
+
+
+	.image {
+		@include whSize(100%, auto);
+		overflow: hidden;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+
+		img {
+			@include whSize(100%, auto);
+			transition: all .5s ease-in-out;
+
+			&:hover {
+				transform: scale(1.3);
+			}
+		}
+	}
+
+	.post-info {
+		background-image: $sky;
+		position: absolute;
+
+		width: auto;
+		color: $text-gray;
+
+		bottom: 0;
+
+		padding: 1rem 2rem;
+
+		display: flex;
+		grid-gap: 1.5rem;
+
+
+		span {
+			white-space: nowrap;
+		}
+
+		span svg {
+			margin-right: .3rem;
+		}
+	}
+}
+
+article .post-desc { display: flex;
+	flex-direction: column;
+	grid-gap: 1.5rem;
+
+
+	h3 {
+		color: $text-gray;
+		font-family: Anton;
+
+		letter-spacing: .1rem;
+		font-weight: 100;
+	}
+
+	p {
+		color: $text-light;
+		font-family: Lexend;
+
+		max-width: 80ch;
+	}
+
+	button {
+		font-family: Livvic;
+		width: min-content;
+
+		display: flex;
+		align-items: center;
+		grid-gap: 1rem;
+
+		padding: 1rem 2rem;
+		border: none;
+		background-image: $sky;
+
+
+		span {
+			white-space: nowrap;
+		}
+	}
+}
+
+
+/*
+ *  ========== Estilo dos links das páginas ==========
+ */
+
+.navigate {
+	display: flex;
+	grid-gap: 2rem;
+
+	justify-content: center;
+	align-items: center;
+
+	a.blog-nav-button {
+		color: $text-gray;
+	}
+
+	
+	ul {
+		display: flex;
+		grid-gap: .5rem;
+
+
+		li {
+			@include whSize(2rem, 2rem);
+			background-color: $text-gray;
+			border-radius: 2rem;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+
+			a {
+				font-family: Lexend;
+				color: $white;
+			}
+		}
+	}
 }

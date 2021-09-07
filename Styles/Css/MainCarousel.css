@@ -46,11 +46,6 @@ section.carousel .blog-carousel article h2 {
 section.carousel .blog-carousel article button {
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   padding: 1rem 2rem;
-  filter: opacity(0.8);
-  transition: all 0.3s ease-in-out;
-}
-section.carousel .blog-carousel article button:hover {
-  filter: opacity(1);
 }
 
 /*# sourceMappingURL=MainCarousel.css.map */
