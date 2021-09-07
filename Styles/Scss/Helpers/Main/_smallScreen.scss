@@ -1,0 +1,26 @@
+@import '../consts';
+
+
+@media screen and (max-width: 950px) {
+	main .container {
+		grid-template-columns: 1fr !important;
+	}
+
+	section.blog-posts {
+		.post-info {
+			left: 0;
+			border-top-right-radius: 2rem;
+		}
+	}
+
+	aside {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+
+		section {
+			max-width: 40ch;
+		}
+	}
+}
